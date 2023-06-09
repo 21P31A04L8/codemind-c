@@ -7,9 +7,12 @@ int prime(int num)
         if (num%i==0)
         {
             return 0;
+            
         }
+        
     }
     return 1;
+    
 }
 int main()
 {
@@ -20,6 +23,7 @@ int main()
     for (i=0; i<a; i++)
     {
         scanf("%d",&arr[i]);
+        
     }
     for (i=0; i<a; i++)
     {
@@ -30,7 +34,9 @@ int main()
                 diff1=j-arr[i];
                 p1=j;
                 break;
+                
             }
+            
         }
         for (j=arr[i]; j>0; j--)
         {
@@ -44,24 +50,31 @@ int main()
         if (diff1>diff2)
         {
             printf("%d",p2);
+            
         }
         else if (diff1<diff2)
         {
             printf("%d",p1);
+            
         }
         else
         {
             if (p1>p2)
             {
                 printf("%d",p2);
+                
             }
             else
             {
                 printf("%d",p1);
+                
             }
+            
         }
         printf("
 ");
+        
     }
     return 0;
+    
 }
